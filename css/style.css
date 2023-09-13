@@ -1,0 +1,132 @@
+/* Estilos generales */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Barra de Navegacion*/
+
+nav ul {
+    list-style: none;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(220,233,236,1) 100%);
+    text-align: right;
+}
+
+nav ul li {
+    font-weight: bold;
+    display: inline;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #a3a3a3;
+    border-radius: 10px;
+    font-size: 25px;
+}
+nav ul li a:hover { 
+    color: #c9974c;
+    background-color: white;
+}
+/* Sección principal */
+section {
+    width: 94%;
+    margin:3%;
+    padding: 3%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+section img{
+    width: 300px;
+    height: 200px;
+}
+/*Afectara al elemento con el identificador #ID*/
+#imggaleria{
+    border-radius: 20px;
+    margin: 10px;
+    width: 30%;
+    height: 250px;
+}
+
+#imgprincipal{
+    display: block;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 10px;
+}
+/*Afectará a todo los elementos a los que se le haya asignado esa clase*/
+.imgnav{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+}
+.fondonosotros{
+    background-image: url("../img/LagoCoatepeque01.jpg");
+    opacity: 0.7;
+}
+.imgicon{
+    margin: 12px;
+    padding: 12px;
+    width: 2%;
+    height: 2%;
+}
+/* Pie de página */
+footer {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(220,233,236,1) 100%);
+    height: max-content;
+    width: 100%;
+}
+
+h2{
+    font-size: 60px;
+}
+
+p{
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+}
+p[name="p1"]::first-line{
+    text-transform: uppercase;
+}
+
+p[class="lc"]::first-letter{
+    color: rgb(81, 41, 211);
+    font-size: 2rem;
+}
+
+iframe{
+    float: right;
+}
+/*Selectores de Atributos aplicado al boton del formulario*/
+input[type="submit"]{
+    background-color: #c277d1;
+    width: 4cm;
+    height: 1cm;
+}
+input[type="submit"]:hover{
+    background-color: cadetblue;
+}
+
+section > h3, section > h2 {
+    color: rgb(231, 143, 80);
+}
+blockquote > h3{
+    color: azure;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
